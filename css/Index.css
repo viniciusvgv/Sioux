@@ -275,3 +275,9 @@ sup{
 #dados-consumo *:not(sup) {
 	font-size: 1.1em;
 }
+
+.rodape{
+	width: 100%;
+	text-align: center;
+	font-size: 0.75em;
+}
