@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    
+    <link type="text/css" rel="stylesheet" href="css/Index.css" />
+    <link type="text/css" rel="stylesheet" href="css/FontAwesome/font-awesome.min.css" />
+
+    <link rel="icon" href="res/fav.png" /> 
+    
+    <title>Sioux - Água</title>
+    <link href='http://fonts.googleapis.com/css?family=Volkhov:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    
+    <div class="container">
+        <div class="header">Abra a torneira das ações</div> 
+        
+        <div id="consumo-agua">
+            
+            <p>
+                Descubra quanta água você gasta tomando banho!
+            </p>
+			<br />
+            
+            <form id="frmConsumoAgua">
+                    Eu tomo <input class="inline" type="number" id="qtosBanhos" min="1" value="1" required> banhos de <input class="inline" type="number" id="tempoChuveiro" min="1" value="1" required> minutos por dia					
+                <input type="submit" value="Calcular">
+            </form>
+        </div>
+		<div id="resultado-consumo">
+			<div id="dados-consumo"></div>
+			<input type="button" value="Calcular novamente" id="novamente">
+			
+			<div id="creditos">
+				<h2>Sobre a campanha</h2>
+				<p>
+					Devido à importância do uso consciente da água em tempos difíceis, onde a falta de controle desse recurso pode nos levar a falência completa dele, precisamos mostrar para a população a importância do uso consciente da água. Informação é poder, e com poder e união podemos mudar a realidade da escassez de recursos hídricos que nos cerca.
+				</p>
+				<p>Essa campanha e esse site são de autoria da equipe Sioux, da Gincana Solidária 2014 do Cotuca - Colégio Técnico de Campinas.</p>
+			</div>
+			
+			<div id="referencias">
+				<h2>Referências</h2>
+				<ul>
+					<li><a href="http://www.epa.gov/watersense/docs/ws_shower_better_learning_resource_508.pdf">EPA (US Environmental Protection Agency) - Dados sobre consumo de água</a></li>
+					<li><a href="">Tomaz, P. - "Economia de água"</a></li>
+				</ul>
+			</div>
+			
+			<div id ="observacoes">
+				<p><sup>1</sup> Um chuveiro gasta em média 8,3 litros de água por minuto.</p>
+				<p><sup>2</sup> Uma pessoa deve consumir 2 litros de água diariamente</p>
+			</div>
+		</div>
+    </div>
+<center><small>Desenvolvido por Rafael Eiki e Vinícius Veroneze</small></center>
+	</body>
+    
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/ConsumoAgua.js"></script>
+</html>

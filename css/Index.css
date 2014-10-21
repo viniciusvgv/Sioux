@@ -1,0 +1,277 @@
+﻿@font-face {
+    font-family: "Good Dog Cool";
+    src: url("../res/GoodDog_Cool.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Good Dog";
+    src: url("../res/GoodDog.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*,
+*:after,
+*::before {
+	box-sizing: border-box;
+    font-size: 18px;
+}
+
+body  {
+	background: #38b1ad;
+    	max-width: 100%;
+    	-webkit-animation: transicao 1s;
+	animation: transicao 1s;
+	font-family: 'Volkhov', serif;
+	
+}
+
+
+#consumo-agua{
+	text-align: center;
+}
+
+#consumo-agua input[type="number"]{
+	background-color: transparent;
+	text-align: center;
+	border-style: none;
+	width: 40px;
+	border-bottom-color: #fff;
+	border-bottom-style: dotted;
+	border-bottom-width: 1.7;
+}
+
+#consumo-agua input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{
+	-webkit-appearence: none;
+	margin: 0;
+}
+
+#consumo-agua input[type="number"]:focus{
+	outline: 0;
+}
+
+.destaque{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+@-webkit-keyframes transicao {
+	from { opacity:0;   }
+	to   { opacity:1;   }
+}
+
+@keyframes transicao {
+    from { opacity:0;   }
+    to   { opacity:1;   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Volkhov', serif;
+}
+
+h2 {
+    font-size: 1.5em;
+	font-family: 'Good Dog';
+}
+
+h2:after {
+    display: block;
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    top: 100%;
+}
+
+p {
+    font-family: "Volkhov";
+    padding-left: 1em;
+}
+
+
+/* ===================================================== */
+/* Página */
+/* ===================================================== */
+
+.header {
+    font-size: 4em;
+    /*font-weight: bold;*/
+    margin: auto; 
+    position: relative;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: "Good Dog Cool";
+    width: auto;
+    vertical-align: middle;
+}
+
+.logo {
+    border-radius: 50%;
+    width : 250px;
+    height: 250px;
+    display: inline-block;
+    background-image: url(../img/simbolo_campanha.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 215px 215px;
+    vertical-align: bottom;
+    margin: 1em;
+    background-color: #fff;
+    
+    -webkit-transform: rotate(0);
+    transform        : rotate(0);
+    
+    -webkit-transition: transform 1s linear;
+    transition: transform 1s linear;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+@-webkit-keyframes anima-logo {
+    0%   { -webkit-transform: rotate(0);      }
+    25%  { -webkit-transform: rotate(90deg);  }
+    50%  { -webkit-transform: rotate(180deg); }
+    75%  { -webkit-transform: rotate(270deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes anima-logo {
+    0%   { transform: rotate(0);      }
+    25%  { transform: rotate(90deg);  }
+    50%  { transform: rotate(180deg); }
+    75%  { transform: rotate(270deg); }
+    100% { transform: rotate(0);      }
+}
+/*
+.header:after {
+    position: relative;
+    top: 100%;
+    display: block;
+    background-color: #2b6596;
+    height: 2px;
+    width: 80%;
+    margin: auto;
+    content: ' ';
+}*/
+
+/* ===================================================== */
+/* Artigos */
+/* ===================================================== */
+
+.bloco {
+    display: block;
+    width: 100%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.bloco .inline:last-child {
+    margin-right: 0.5em;
+    position: relative;
+    right: 0;
+}
+
+#portal {
+    background-color: #3DB0AD;
+}
+
+#noticias {
+    background-color: #FAA940;
+}
+
+.coluna {
+    height : 400px;
+    width  : 49%;
+    display: inline-block;
+}
+
+iframe {
+    height: 100%;
+    width : 100%;
+    border: solid 1px #000;
+    border-radius: 0.5em;
+    outline: none;
+}
+
+sup{
+	font-size: 0.5em;
+	font-weight: bold;
+}
+
+#frmConsumoAgua{
+	font-size: 25px;
+}
+
+#frmConsumoAgua .bloco {
+    margin: 0.5em;
+}
+
+#frmConsumoAgua input[type=submit] {
+    display: block;
+    margin: 0.5em auto;
+    padding: 0.5em 2em;
+    border-radius: 0.2em;
+    background-color: #fff;
+    color: #3DB0AD;
+    cursor: pointer;
+    font-family: "Good Dog";
+	border-style: none;
+    font-size: 1.4em;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#frmConsumoAgua input[type=submit]:hover {
+    color: #3DB0AD;
+    background-color: #fff;
+}
+
+#resultados-consumo {
+    width: 50%;
+    min-width: 160px;
+    background-color: #C6305E;
+    float: right;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+#referencias ul {
+    list-style: none;
+}
+
+#referencias a {
+	text-transform: italic;
+    color: #333;
+    text-decoration: none;
+}
+
+#observacoes p{
+	font-size: 0.7em;
+}
+
+#resultado-consumo input[id="novamente"]{
+	display: block;
+    margin: 0.5em auto;
+    padding: 0.5em 2em;
+    border-radius: 0.2em;
+    background-color: #fff;
+    color: #3DB0AD;
+    cursor: pointer;
+    font-family: "Good Dog";
+	border-style: none;
+    font-size: 1.1em;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+#dados-consumo *:not(sup) {
+	font-size: 1.1em;
+}
